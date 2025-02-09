@@ -8,12 +8,12 @@ nav ul li{
     list-style: none;
     /* height: 112px; */
     /* font-size: larger; */
-    background-color: black;
+    /* background-color: rgb(7, 7, 7); */
 
 
 }
 nav {
-    background-color: black;
+    background-color: rgb(56, 65, 239);
     color: white;
     height: 60px;
     padding: 0 3%;
@@ -37,15 +37,18 @@ nav {
     grid-template-columns: 10vw 10vw 10vw;
     grid-template-rows: 10vw, 10vw, 10vw;
     font-family:cursive;
+    height: 50vh;
     
 }
 .box{
-    border: 1.3px solid rgb(13, 13, 13);
+    border: 1.3px solid rgb(247, 238, 238);
     text-align: center;
     font-size: 4vw;
+    color: rgb(237, 61, 234);
 }
 .box:hover{
-    background-color: aqua;
+    background-color: rgb(105, 165, 239);
+
 }
 /* .text:hover{
     background-color: aqua;
@@ -54,7 +57,9 @@ nav {
      padding: 0 34px;
 }
 .imagebox img{
-    display: none;
+    width:0;
+    transition: width 2s ease-in-out;
+
 }
 .bt{
     border-top: 0;
@@ -67,4 +72,13 @@ nav {
 }
 .bb{
     border-bottom: 0;
+}
+#reset{
+    border-radius: 5px;
+    background: linear-gradient(rgb(241, 91, 241), pink);
+    /* box-shadow: (5px 5px 15px red  ); */
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10% 5%;
 }
