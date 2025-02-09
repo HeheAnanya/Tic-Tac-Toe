@@ -66,7 +66,7 @@ const checkWin = ()=>{
 }
 
 // Game Logic
-music.play()
+// music.play()
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.text');
@@ -92,6 +92,6 @@ reset.addEventListener('click', ()=>{
     turn = "X"; 
     isgameover = false
     // document.querySelector(".line").style.width = "0vw";
-    document.getElementsByClassName("info")[0].innerText  = "Now it's time for " + turn;
+    document.getElementsByClassName("info")[0].innerText  = "Let's roll for " + turn;
     document.querySelector('.imagebox').getElementsByTagName('img')[0].style.width = "0px"
 })

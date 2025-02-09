@@ -44,17 +44,19 @@ nav {
     border: 1.3px solid rgb(247, 238, 238);
     text-align: center;
     font-size: 4vw;
-    color: rgb(237, 61, 234);
+    color: rgb(144, 245, 135);
 }
 .box:hover{
-    background-color: rgb(105, 165, 239);
+    background-color: rgb(221, 223, 223);
 
 }
 /* .text:hover{
     background-color: aqua;
 } */
 .gameInfo{
-     padding: 0 34px;
+    padding: 0 34px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
 }
 .imagebox img{
     width:0;
@@ -81,4 +83,23 @@ nav {
     height: 30px;
     cursor: pointer;
     margin: 10% 5%;
+}
+@media screen and (max-width:800px) {
+    .game{
+        flex-wrap: wrap;
+
+    }
+    .info{
+        margin-top: 34px;
+
+    }
+    .info h1{
+        font-size: 1.5rem; ;
+    }
+    .container{
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-template-rows: 20vw, 20vw, 20vw;
+    
+    }
+
 }
